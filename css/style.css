@@ -126,7 +126,7 @@ body {
     top: 80px;
     left: 40px;
     animation-name: twisting;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
