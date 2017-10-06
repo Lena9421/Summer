@@ -18,35 +18,20 @@ body {
     perspective: 1000px;
 }
 
-.site-navigation__logo--green {
-    font-family: 'Oswald', 'Arial', sans-serif;
-    color: #029b46;
-    font-size: 37px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-style: italic;
-
-    box-shadow: 0 1px 5px #000000;
-}
-
-.site-navigation__logo--white {
-    font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 37px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-style: italic;
-    box-shadow: 0 1px 5px #000000;
+.main-header__navigation {
+    margin-top: 37px;
+    margin-right: 18px;
 }
 
 .main-header__title--big {
     font-size: 80px;
     font-weight: 800;
-    margin-top: 110px;
+    margin-top: 65px;
     color: #ffffff;
     text-shadow: 0 0 15px #009640;
     margin-bottom: 0;
     z-index: 1000;
+    position: relative;
 }
 
 .main-header__title--medium {
@@ -56,6 +41,9 @@ body {
     text-shadow: 0 0 11px #009a3e;
     margin-top: 15px;
     margin-bottom: 0;
+    z-index: 1000;
+    position: relative;
+
 
 }
 
@@ -80,41 +68,39 @@ body {
     margin: 0;
     display: block;
     position: absolute;
-    border: 2px solid #03bf59;
 }
 
 .main-header__btn {
-    width: 337px;
-    height: 93px;
+    width: 309px;
+    height: 75px;
     display: block;
     color: #ffffff;
     background-color: #029c42;
     text-transform: uppercase;
     font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 54px;
+    font-size: 44px;
     font-weight: lighter;
     border: none;
     outline: none;
     border-radius: 4px;
     transform-style: preserve-3d;
-    transform: perspective(500px) rotateX(50deg)translateZ(0px) ;
+    transform: perspective(500px) rotateX(45deg)translateZ(0px) ;
     box-shadow: 0 100px 40px 10px rgba(0, 1, 1, 0.5);
     position: absolute;
     cursor: pointer;
-    left: 20px;
-    animation-name: bounce;
+    left: 35px;
+
 }
 
 @keyframes bounce {
     from {
-        transform: rotate(0deg);
+        transform: translate(0px, 0px);
     }
 
     to {
-        transform: rotate(160deg);
+        transform: translate(0px 0px);
     }
 }
-
 
 .main-header__btn:active {
     bottom: -14px;
@@ -124,13 +110,13 @@ body {
 
 }
 .main-header__btn--front {
-    width: 365px;
-    height: 12px;
+    width: 323px;
+    height: 14px;
     background-color: #007235;
     border-radius: 4px;
     position: absolute;
-    bottom: -13px;
-    left: 5px;
+    bottom: 10px;
+    left: 30px;
     cursor: pointer;
     transform: perspective(337px) rotateY(0deg)rotateX(-10deg) translateZ(8px);
 }
@@ -140,7 +126,7 @@ body {
     top: 80px;
     left: 40px;
     animation-name: twisting;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -152,46 +138,50 @@ body {
 
     to {
         transform: rotate(160deg);
+
     }
 }
 
 .ball {
     position: absolute;
     animation-name: twisting;
-    animation-duration: 30s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+.main-header__ball--left-corner {
+    top: 28px;
+    left: 33px;
+
+}
 .main-header__ball--right-corner {
-    top: 80px;
-    right: 40px;
+    top: 45px;
+    right: 30px;
 
 }
 
 .main-header__ball--bottom {
-
-    bottom: -200px;
-    right: 400px;
-
+    bottom: -290px;
+    right: 440px;
 }
 
 .main-header__ball--top-middle {
-
-    top: 120px;
-    right: 400px;
-    z-index: 1;
+    top: 50px;
+    right: 300px;
+    z-index: 0;
 }
 
 .main-header__ball--left-side {
-    top: 280px;
-    left: 10px;
+    top: 390px;
+    left: 110px;
 }
 
 .main-header__ball--right-side {
-    top: 380px;
-    right: 140px;
+    top: 375px;
+    right: 115px;
 }
 .main-header__ball--middle {
-    top: 280px;
-    left: 450px;
+    top: 215px;
+    left: 335px;
 }
