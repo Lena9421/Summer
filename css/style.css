@@ -21,6 +21,8 @@ body {
 .main-header__navigation {
     margin-top: 37px;
     margin-right: 18px;
+    position: relative;
+    z-index: 1000;
 }
 
 .main-header__title--big {
@@ -94,11 +96,11 @@ body {
 
 @keyframes bounce {
     from {
-        transform: translate(0px, 0px);
+        transform: translateY(150%);
     }
 
     to {
-        transform: translate(0px 0px);
+        transform: translateY(-150%);
     }
 }
 
@@ -126,19 +128,26 @@ body {
     top: 80px;
     left: 40px;
     animation-name: twisting;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
 }
 
 @keyframes twisting {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg) translateY(15%);
+    }
+    40% {
+        transform: rotate(60deg)translateY(40%);
     }
 
-    to {
-        transform: rotate(160deg);
+    60% {
+        transform: rotate(100deg) translateY(120%);
+    }
+    80% { transform: rotate(120deg) translateY(150%);
+    }
 
+    100% {
+        transform: rotate(150deg) translateY(100%);
     }
 }
 
@@ -148,28 +157,35 @@ body {
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+
 }
 
 .main-header__ball--left-corner {
     top: 28px;
     left: 33px;
+    animation-duration: 12s;
 
 }
 .main-header__ball--right-corner {
     top: 45px;
     right: 30px;
+    animation-duration: 15s;
 
 }
 
 .main-header__ball--bottom {
     bottom: -290px;
     right: 440px;
+    animation-duration: 17s;
 }
 
 .main-header__ball--top-middle {
     top: 50px;
     right: 300px;
     z-index: 0;
+    animation-duration: 5s;
 }
 
 .main-header__ball--left-side {
@@ -180,6 +196,7 @@ body {
 .main-header__ball--right-side {
     top: 375px;
     right: 115px;
+    animation-duration: 22s;
 }
 .main-header__ball--middle {
     top: 215px;
