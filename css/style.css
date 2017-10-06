@@ -45,8 +45,6 @@ body {
     margin-bottom: 0;
     z-index: 1000;
     position: relative;
-
-
 }
 
 .main-header__title--small {
@@ -80,18 +78,17 @@ body {
     background-color: #029c42;
     text-transform: uppercase;
     font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 44px;
+    font-size: 34px;
     font-weight: lighter;
     border: none;
     outline: none;
     border-radius: 4px;
     transform-style: preserve-3d;
-    transform: perspective(500px) rotateX(45deg)translateZ(0px) ;
+    transform: perspective(500px) rotateX(45deg) translateZ(0px);
     box-shadow: 0 100px 40px 10px rgba(0, 1, 1, 0.5);
     position: absolute;
     cursor: pointer;
     left: 35px;
-
 }
 
 @keyframes bounce {
@@ -107,10 +104,11 @@ body {
 .main-header__btn:active {
     bottom: -14px;
 }
+
 .main-header__btn:active ~ .main-header__btn--front {
     bottom: -19px;
-
 }
+
 .main-header__btn--front {
     width: 323px;
     height: 14px;
@@ -120,7 +118,7 @@ body {
     bottom: 10px;
     left: 30px;
     cursor: pointer;
-    transform: perspective(337px) rotateY(0deg)rotateX(-10deg) translateZ(8px);
+    transform: perspective(337px) rotateY(0deg) rotateX(-10deg) translateZ(8px);
 }
 
 .main-header__ball--left-corner {
@@ -137,13 +135,14 @@ body {
         transform: rotate(0deg) translateY(15%);
     }
     40% {
-        transform: rotate(60deg)translateY(40%);
+        transform: rotate(60deg) translateY(40%);
     }
 
     60% {
         transform: rotate(100deg) translateY(120%);
     }
-    80% { transform: rotate(120deg) translateY(150%);
+    80% {
+        transform: rotate(120deg) translateY(150%);
     }
 
     100% {
@@ -158,21 +157,18 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: backwards;
-
-
 }
 
 .main-header__ball--left-corner {
     top: 28px;
     left: 33px;
     animation-duration: 12s;
-
 }
+
 .main-header__ball--right-corner {
     top: 45px;
     right: 30px;
     animation-duration: 15s;
-
 }
 
 .main-header__ball--bottom {
@@ -198,6 +194,7 @@ body {
     right: 115px;
     animation-duration: 22s;
 }
+
 .main-header__ball--middle {
     top: 215px;
     left: 335px;
