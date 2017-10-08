@@ -47,7 +47,43 @@ body
     color: #fff;
     text-shadow: 0 0 15px #009640;
 }
-
+.titles {
+    position: absolute;
+    top: 40%;
+    width: 700px;
+    height: 200px;
+    animation-name: fade-out;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+.titles-second {
+    position: absolute;
+    top: 40%;
+    width: 700px;
+    height: 200px;
+    animation-name: fade-out-second;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.titles-third {
+    position: absolute;
+    top: 40%;
+    width: 700px;
+    height: 200px;
+    animation-name: fade-out-third;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
 .main-header__title--medium
 {
     font-size: 40px;
@@ -55,23 +91,23 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 44%;
-    left: 34%;
+    top: 5%;
+    left: 37%;
 
     margin-top: 15px;
     margin-bottom: 0;
 
-    animation-name: fade-out;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
 
-    animation-fill-mode: both;
+    /*animation-fill-mode: both;*/
 }
 
 .main-header__title--small
@@ -81,23 +117,23 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 58%;
-    left: 35%;
+    top: 50%;
+    left: 40%;
 
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 
-    animation-name: fade-out;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
 
-    animation-fill-mode: both;
+    /*animation-fill-mode: both;*/
 }
 
 .main-header__title--medium-second {
@@ -106,20 +142,20 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 44%;
-    left: 38%;
+    top: 5%;
+    left: 40%;
 
     margin-top: 15px;
     margin-bottom: 0;
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
-    animation-name: fade-out-second;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out-second;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 }
 
 .main-header__title--small-second {
@@ -128,7 +164,7 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 58%;
+    top: 50%;
     left: 36%;
 
     margin-top: 0;
@@ -136,12 +172,12 @@ body
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
-    animation-name: fade-out-second;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out-second;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 }
 
 .main-header__title--medium-third {
@@ -150,20 +186,20 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 44%;
-    left: 40%;
+    top: 8%;
+    left: 42%;
 
     margin-top: 15px;
     margin-bottom: 0;
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
-    animation-name: fade-out-third;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out-third;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 }
 
 .main-header__title--small-third {
@@ -172,7 +208,7 @@ body
 
     position: absolute;
     z-index: 1000;
-    top: 58%;
+    top: 50%;
     left: 38%;
 
     margin-top: 0;
@@ -180,26 +216,26 @@ body
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
-    animation-name: fade-out-third;
-    animation-duration: 6s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    /*animation-name: fade-out-third;*/
+    /*animation-duration: 4s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: 0;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: normal;*/
 }
 
 @keyframes fade-out {
     from
     {
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(38%, 0, 0);
         opacity: 1;
     }
 
     20%
     {
-        transform: translate3d(-38%, 0, 0);
+        transform: translate3d(0, 0, 0);
 
-        opacity: 0;
+        opacity: 1;
     }
 
     40%
@@ -222,7 +258,7 @@ body
     }
     to
     {
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(-38%, 0, 0);
 
         opacity: 0;
     }
@@ -237,7 +273,7 @@ body
 
     20%
     {
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(38%, 0, 0);
 
         opacity: 0;
     }
@@ -292,16 +328,16 @@ body
     }
     80%
     {
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(38%, 0, 0);
 
-        opacity: 1;
+        opacity: 0;
     }
 
     to
     {
-        transform: translate3d(-38%, 0, 0);
+        transform: translate3d(0, 0, 0);
 
-        opacity: 0;
+        opacity: 1;
     }
 }
 
