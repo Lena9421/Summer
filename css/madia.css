@@ -34,9 +34,6 @@ and (max-device-width: 1024px) {
         font-size: 20px;
     }
 
-    .ball {
-        display: none;
-    }
 
     .main-header__btn {
         width: 268px;
@@ -57,12 +54,46 @@ and (max-device-width: 1024px) {
         bottom: 51px;
         margin: 0 auto;
     }
-}
 
+    .main-header__btn:active {
+        bottom: 37px;
+    }
+
+    .main-header__btn:active ~ .main-header__btn--front {
+        bottom: 32px;
+    }
+
+    .main-header__ball--bottom {
+
+        position: absolute;
+    }
+    .main-header__ball--tablet-hidden {
+        display: none;
+    }
+    @keyframes twisting {
+        0% {
+            transform: rotate(0deg) translateY(15%);
+        }
+        40% {
+            transform: rotate(60deg) translateY(18%);
+        }
+
+        60% {
+            transform: rotate(100deg) translateY(20%);
+        }
+        80% {
+            transform: rotate(120deg) translateY(25%);
+        }
+
+        100% {
+            transform: rotate(150deg) translateY(30%);
+        }
+    }
+}
 
 @media only screen
 and (min-device-width: 320px)
-and (max-device-width: 768px) {
+and (max-device-width: 767px) {
 
     body {
         width: 320px;
@@ -85,32 +116,29 @@ and (max-device-width: 768px) {
     .main-header__title {
         position: relative;
         z-index: 1000;
-
     }
 
     .main-header__title--big {
-        font-size: 42px;
-        font-weight: 800;
-
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 20px;
     }
 
     .main-header__title--medium {
-        font-size: 42px;
-
+        font-size: 36px;
+        font-weight: 400;
     }
 
     .main-header__title--small {
         font-size: 20px;
-    }
-
-    .ball {
-        display: none;
+        font-weight: 400;
     }
 
     .main-header__btn {
         width: 268px;
         height: 55px;
         font-size: 25px;
+        font-weight: 400;
         bottom: 55px;
         left: 10px;
     }
@@ -123,6 +151,41 @@ and (max-device-width: 768px) {
         position: absolute;
         bottom: 51px;
         left: 8px;
+    }
 
+    .main-header__btn:active {
+        bottom: 47px;
+    }
+
+    .main-header__btn:active ~ .main-header__btn--front {
+        bottom: 42px;
+    }
+
+    .main-header__ball--middle {
+        left: 100px;
+    }
+
+    .main-header__ball--mobile-hidden {
+        display: none;
+    }
+
+    @keyframes twisting {
+        0% {
+            transform: rotate(0deg) translateY(15%);
+        }
+        40% {
+            transform: rotate(60deg) translateY(18%);
+        }
+
+        60% {
+            transform: rotate(100deg) translateY(20%);
+        }
+        80% {
+            transform: rotate(120deg) translateY(25%);
+        }
+
+        100% {
+            transform: rotate(150deg) translateY(30%);
+        }
     }
 }
