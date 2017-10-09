@@ -1,3 +1,102 @@
+/*Mobile*/
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 768px)  {
+    body {
+        width: 320px;
+        max-width: 90%;
+        min-height: 568px;
+        text-align: center;
+        background-image: url("../img/mobile-back.png");
+        background-color: black;
+        background-size: cover;
+    }
+
+    .main-content {
+        margin: 0 auto;
+        width: 283px;
+        height: 251px;
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .main-content__title {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .main-content__title--big {
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+
+    .main-content__title--medium {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .main-content__title--small {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .main-content__btn {
+        width: 268px;
+        height: 55px;
+        font-size: 25px;
+        font-weight: 400;
+        bottom: 55px;
+        left: 10px;
+    }
+
+    .main-content__btn--front {
+        width: 274px;
+        height: 11px;
+        background-color: #007235;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 51px;
+        left: 8px;
+    }
+
+    .main-content__btn:active {
+        bottom: 47px;
+    }
+
+    .main-content__btn:active ~ .main-content__btn--front {
+        bottom: 42px;
+    }
+
+    .main-content__ball--middle {
+        left: 100px;
+    }
+
+    .main-content__ball--mobile-hidden {
+        display: none;
+    }
+
+    @keyframes twisting {
+        0% {
+            transform: rotate(0deg) translateY(15%);
+        }
+        40% {
+            transform: rotate(60deg) translateY(18%);
+        }
+
+        60% {
+            transform: rotate(100deg) translateY(20%);
+        }
+        80% {
+            transform: rotate(120deg) translateY(25%);
+        }
+
+        100% {
+            transform: rotate(150deg) translateY(30%);
+        }
+    }
+}
+/*Tablet*/
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
@@ -59,15 +158,15 @@ and (max-device-width: 1024px) {
         bottom: 37px;
     }
 
-    .main-header__btn:active ~ .main-header__btn--front {
+    .knob__side--top:active ~ .knob__side--front {
         bottom: 32px;
     }
 
-    .main-header__ball--bottom {
+    .ball .ball--bottom {
 
         position: absolute;
     }
-    .main-header__ball--tablet-hidden {
+    .ball .ball--tablet-hidden {
         display: none;
     }
     @keyframes twisting {
@@ -91,101 +190,3 @@ and (max-device-width: 1024px) {
     }
 }
 
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 767px) {
-
-    body {
-        width: 320px;
-        max-width: 90%;
-        min-height: 568px;
-        text-align: center;
-        background-image: url("../img/mobile-back.png");
-        background-color: black;
-        background-size: cover;
-    }
-
-    .main-header {
-        margin: 0 auto;
-        width: 283px;
-        height: 251px;
-        position: relative;
-        perspective: 1000px;
-    }
-
-    .main-header__title {
-        position: relative;
-        z-index: 1000;
-    }
-
-    .main-header__title--big {
-        font-size: 38px;
-        font-weight: 700;
-        margin-top: 20px;
-    }
-
-    .main-header__title--medium {
-        font-size: 36px;
-        font-weight: 400;
-    }
-
-    .main-header__title--small {
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    .main-header__btn {
-        width: 268px;
-        height: 55px;
-        font-size: 25px;
-        font-weight: 400;
-        bottom: 55px;
-        left: 10px;
-    }
-
-    .main-header__btn--front {
-        width: 274px;
-        height: 11px;
-        background-color: #007235;
-        border-radius: 4px;
-        position: absolute;
-        bottom: 51px;
-        left: 8px;
-    }
-
-    .main-header__btn:active {
-        bottom: 47px;
-    }
-
-    .main-header__btn:active ~ .main-header__btn--front {
-        bottom: 42px;
-    }
-
-    .main-header__ball--middle {
-        left: 100px;
-    }
-
-    .main-header__ball--mobile-hidden {
-        display: none;
-    }
-
-    @keyframes twisting {
-        0% {
-            transform: rotate(0deg) translateY(15%);
-        }
-        40% {
-            transform: rotate(60deg) translateY(18%);
-        }
-
-        60% {
-            transform: rotate(100deg) translateY(20%);
-        }
-        80% {
-            transform: rotate(120deg) translateY(25%);
-        }
-
-        100% {
-            transform: rotate(150deg) translateY(30%);
-        }
-    }
-}
