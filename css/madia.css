@@ -1,10 +1,10 @@
 /*Mobile*/
 @media only screen
-and (min-device-width: 320px)
-and (max-device-width: 768px)  {
+and (min-width: 320px)
+and (max-width: 768px)  {
     body {
-        width: 320px;
-        max-width: 90%;
+        min-width: 320px;
+        max-width: 768px;
         min-height: 568px;
         text-align: center;
         background-image: url("../img/mobile-back.png");
@@ -14,7 +14,7 @@ and (max-device-width: 768px)  {
 
     .main-content {
         margin: 0 auto;
-        width: 283px;
+        min-width: 283px;
         height: 251px;
         position: relative;
         perspective: 1000px;
@@ -26,55 +26,50 @@ and (max-device-width: 768px)  {
     }
 
     .main-content__title--big {
-        font-size: 38px;
+        font-size: 55px;
         font-weight: 700;
         margin-top: 20px;
     }
 
-    .main-content__title--medium {
+    .feature__title {
         font-size: 36px;
         font-weight: 400;
     }
 
-    .main-content__title--small {
+    .feature__description {
         font-size: 20px;
         font-weight: 400;
     }
 
-    .main-content__btn {
-        width: 268px;
-        height: 55px;
-        font-size: 25px;
-        font-weight: 400;
-        bottom: 55px;
-        left: 10px;
+    .knob {
+        position: relative;
+
+        min-width: 65%;
+        height: 90px;
+        margin: 30% auto;
+
+        transform-style: preserve-3d;
     }
 
-    .main-content__btn--front {
-        width: 274px;
-        height: 11px;
-        background-color: #007235;
-        border-radius: 4px;
-        position: absolute;
-        bottom: 51px;
-        left: 8px;
-    }
-
-    .main-content__btn:active {
-        bottom: 47px;
-    }
-
-    .main-content__btn:active ~ .main-content__btn--front {
-        bottom: 42px;
-    }
-
-    .main-content__ball--middle {
-        left: 100px;
-    }
-
-    .main-content__ball--mobile-hidden {
+    .ball--top-middle {
         display: none;
     }
+    .ball--middle {
+        display: none;
+    }
+
+    .ball--right-corner {
+        display: none;
+    }
+
+    .ball--left-corner {
+        display: none;
+    }
+
+    .ball--left-side {
+       display: none;
+    }
+
 
     @keyframes twisting {
         0% {
@@ -96,13 +91,27 @@ and (max-device-width: 768px)  {
         }
     }
 }
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 545px) {
+
+    .knob {
+        position: relative;
+
+        width: 95%;
+        height: 90px;
+        margin: 40% auto;
+    }
+
+}
 /*Tablet*/
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
+and (min-width: 768px)
+and (max-width: 1024px) {
 
     body {
-        width: 768px;
+        min-width: 768px;
         height: 1024px;
         text-align: center;
         background-image: url("../img/tablet-back.jpg");
@@ -110,65 +119,41 @@ and (max-device-width: 1024px) {
         background-size: cover;
     }
 
-    .main-header {
+    .main-content {
         margin: 0 auto;
-        width: 477px;
+        min-width: 477px;
         height: 216px;
         position: relative;
         perspective: 1000px;
     }
 
-    .main-header__title--big {
-        font-size: 60px;
-        font-weight: 800;
+    .main-content__title--big {
+     font-size: 70px;
 
     }
 
-    .main-header__title--medium {
+    .feature__title {
         font-size: 32px;
 
     }
 
-    .main-header__title--small {
+    .feature__description {
         font-size: 20px;
     }
 
 
-    .main-header__btn {
-        width: 268px;
-        height: 50px;
-        font-size: 25px;
-        bottom: 55px;
-        margin: 0 auto;
-        left: 65px;
+    .
+
+    .ball--right-corner {
+       display: none;
     }
 
-    .main-header__btn--front {
-        width: 272px;
-        height: 11px;
-        background-color: #007235;
-        border-radius: 4px;
-        position: absolute;
-        left: 63px;
-        bottom: 51px;
-        margin: 0 auto;
-    }
-
-    .main-header__btn:active {
-        bottom: 37px;
-    }
-
-    .knob__side--top:active ~ .knob__side--front {
-        bottom: 32px;
-    }
-
-    .ball .ball--bottom {
-
-        position: absolute;
-    }
-    .ball .ball--tablet-hidden {
+    .ball--left-corner {
         display: none;
     }
+
+
+
     @keyframes twisting {
         0% {
             transform: rotate(0deg) translateY(15%);
