@@ -177,19 +177,19 @@ body {
 
     20% {
         -webkit-transform: translate3d(10%, 0, 0);
-        transform: translate3d(8%, 0, 0);
+        transform: translate3d(10%, 0, 0);
 
         opacity: 1;
     }
 
     40% {
-        -webkit-transform: translate3d(0%, 0, 0);
-        transform: translate3d(8%, 0, 0);
+        -webkit-transform: translate3d(10%, 0, 0);
+        transform: translate3d(10%, 0, 0);
 
         opacity: 1;
     }
     60% {
-        -webkit-transform: translate3d(-38%, 0, 0);
+        -webkit-transform: translate3d(-35%, 0, 0);
         transform: translate3d(-38%, 0, 0);
 
         opacity: 0;
