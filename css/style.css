@@ -46,13 +46,13 @@ body {
     color: #fff;
     text-shadow: 0 0 15px #009640;
 }
-.feature {
+.feature-lottery {
     position: absolute;
     z-index: 1000;
     top: 40%;
 
-    width: 70%;
-    height: 200px;
+    width: 75%;
+    height: 40%;
 
     -webkit-animation-name: fade-out;
 
@@ -73,13 +73,14 @@ body {
     animation-fill-mode: both;
 }
 
-.feature-second {
+.feature-mobile {
     position: absolute;
     z-index: 1000;
     top: 40%;
 
-    width: 70%;
-    height: 200px;
+    width: 75%;
+    height: 40%;
+
 
     -webkit-animation-name: fade-out-second;
 
@@ -100,34 +101,7 @@ body {
     animation-fill-mode: both;
 }
 
-.feature-third {
-    position: absolute;
-    z-index: 1000;
-    top: 40%;
-
-    width: 70%;
-    height: 200px;
-
-    -webkit-animation-name: fade-out-third;
-
-    animation-name: fade-out-third;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
-
-    -webkit-animation-fill-mode: both;
-
-    animation-fill-mode: both;
-}
-
-.feature__title {
+.feature-lottery__title {
     position: absolute;
     z-index: 1000;
     top: 5%;
@@ -138,12 +112,13 @@ body {
 
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Oswald', 'Arial', sans-serif;
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
 }
 
-.feature__description {
+.feature-lottery__description {
     position: absolute;
     z-index: 1000;
     top: 50%;
@@ -153,29 +128,29 @@ body {
     margin-bottom: 0;
 
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
 }
 
-.feature-second__title {
+ .feature-mobile__title {
     position: absolute;
     z-index: 1000;
     top: 5%;
-    left: 40%;
+    left: 39%;
 
     margin-top: 15px;
     margin-bottom: 0;
 
     font-size: 40px;
     font-weight: 700;
+     font-family: 'Oswald', 'Arial', sans-serif;
 
     color: #fff;
     text-shadow: 0 0 11px #009a3e;
 }
-
-.feature-second__description {
+.feature-mobile__description {
     position: absolute;
     z-index: 1000;
     top: 50%;
@@ -185,41 +160,10 @@ body {
     margin-bottom: 40px;
 
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Oswald', 'Arial', sans-serif;
 
     color: #fff;
-    text-shadow: 0 0 11px #009a3e;
-}
-
-.feature-third__title {
-    position: absolute;
-    z-index: 1000;
-    top: 8%;
-    left: 42%;
-
-    margin-top: 15px;
-    margin-bottom: 0;
-
-    font-size: 40px;
-    font-weight: 700;
-
-    color: red;
-    text-shadow: 0 0 11px #009a3e;
-}
-
-.feature-third__description {
-    position: absolute;
-    z-index: 1000;
-    top: 50%;
-    left: 38%;
-
-    margin-top: 0;
-    margin-bottom: 40px;
-
-    font-size: 24px;
-    font-weight: 700;
-
-    color: red;
     text-shadow: 0 0 11px #009a3e;
 }
 
@@ -232,15 +176,15 @@ body {
     }
 
     20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(10%, 0, 0);
+        transform: translate3d(8%, 0, 0);
 
         opacity: 1;
     }
 
     40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(8%, 0, 0);
 
         opacity: 1;
     }
@@ -264,46 +208,6 @@ body {
     }
 }
 
-@keyframes fade-out {
-    from {
-        -webkit-transform: translate3d(38%, 0, 0);
-        transform: translate3d(38%, 0, 0);
-
-        opacity: 1;
-    }
-
-    20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-
-    40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-    60% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    80% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-
-        opacity: 0;
-    }
-}
 @-webkit-keyframes fade-out-second {
     from {
         -webkit-transform: translate3d(38%, 0, 0);
@@ -313,15 +217,15 @@ body {
     }
 
     20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(8%, 0, 0);
 
         opacity: 1;
     }
 
     40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(8%, 0, 0);
 
         opacity: 1;
     }
@@ -344,126 +248,7 @@ body {
         opacity: 0;
     }
 }
-@keyframes fade-out-second {
-    from {
-        -webkit-transform: translate3d(38%, 0, 0);
-        transform: translate3d(38%, 0, 0);
 
-        opacity: 0;
-    }
-
-    20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-
-    40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-    60% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    80% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-
-        opacity: 0;
-    }
-}
-@-webkit-keyframes fade-out-third {
-    from {
-        -webkit-transform: translate3d(38%, 0, 0);
-        transform: translate3d(38%, 0, 0);
-
-        opacity: 0;
-    }
-
-    20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-
-    40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-    60% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    80% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-
-        opacity: 0;
-    }
-}
-@keyframes fade-out-third {
-    from {
-        -webkit-transform: translate3d(38%, 0, 0);
-        transform: translate3d(38%, 0, 0);
-
-        opacity: 0;
-    }
-
-    20% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-
-    40% {
-        -webkit-transform: translate3d(15%, 0, 0);
-        transform: translate3d(15%, 0, 0);
-
-        opacity: 1;
-    }
-    60% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    80% {
-        -webkit-transform: translate3d(-38%, 0, 0);
-        transform: translate3d(-38%, 0, 0);
-
-        opacity: 0;
-    }
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-
-        opacity: 0;
-    }
-}
 
 .knob {
     position: relative;
@@ -507,22 +292,6 @@ body {
     }
 }
 
-@keyframes fadeInUp {
-    from {
-        -webkit-transform: translate3d(0, -90%, 0);
-        transform: translate3d(0, -90%, 0);
-
-        opacity: 1;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0%, 0);
-        transform: translate3d(0, 0%, 0);
-
-        opacity: 1;
-    }
-}
-
 .knob__side--top,
 .knob__side--front {
     position: absolute;
@@ -542,7 +311,7 @@ body {
     height: 85px;
 
     font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 42px;
+    font-size: 39px;
     font-weight: lighter;
 
     cursor: pointer;
